@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import Front from './front';
+import FrontBar from './front/bar';
+import Back from './back';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  constructor() {
+    super();
+  
+    this.state = {
+      color: '#fff',
+      frontData: null,
+    };
+  }
+
+  changeColor(e) {
+    this.setState({
+      color: e.target.value
+    });
+  }
+
+  render() {
+    return (
+      <div className="main">
+        <div className="mockup" style={{backgroundColor: this.state.color}}>
+          <Front 
+            data={this.state.frontData}
+          />
+          <Back />
+        </div>
+
+        <div className="color">
+          <label htmlFor="color">Cor da camisa:</label>
+          <select id="color" onChange={(e) => this.changeColor(e)}>
+            <option value="#fff">Branca</option>
+            <option value="#f00">Vermelha</option>
+            <option value="#00f">Azul</option>
+            <option value="#0f0">Verde</option>
+          </select>
+        </div>
+
+        <hr/>
+
+        <FrontBar onUpdate={ frontData => this.setState({ frontData }) } />
+      </div>
+    );
+  }
 }
-
-export default App;
