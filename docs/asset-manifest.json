@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed76ea71.chunk.css",
+    "main.js": "/static/js/main.35f51673.chunk.js",
+    "main.js.map": "/static/js/main.35f51673.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.530c7ba0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.530c7ba0.js.map",
+    "static/js/2.96d53459.chunk.js": "/static/js/2.96d53459.chunk.js",
+    "static/js/2.96d53459.chunk.js.map": "/static/js/2.96d53459.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3b7d6deaa15c6dacc6a5ca8354d367ee.js": "/precache-manifest.3b7d6deaa15c6dacc6a5ca8354d367ee.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ed76ea71.chunk.css.map": "/static/css/main.ed76ea71.chunk.css.map",
+    "static/media/style.scss": "/static/media/camisa_frente.527c098b.png",
+    "static/media/marca_dagua.png": "/static/media/marca_dagua.aa35bae6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.530c7ba0.js",
+    "static/js/2.96d53459.chunk.js",
+    "static/css/main.ed76ea71.chunk.css",
+    "static/js/main.35f51673.chunk.js"
+  ]
+}
