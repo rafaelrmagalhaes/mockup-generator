@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Front from './front';
 import FrontBar from './front/bar';
+import BackBar from './back/bar';
 import Back from './back';
 
 export default class App extends Component {
@@ -11,6 +12,7 @@ export default class App extends Component {
     this.state = {
       color: '#fff',
       frontData: null,
+      backData: null,
     };
   }
 
@@ -27,7 +29,9 @@ export default class App extends Component {
           <Front 
             data={this.state.frontData}
           />
-          <Back />
+          <Back 
+            data={this.state.backData}
+          />
         </div>
 
         <div className="color">
@@ -43,6 +47,7 @@ export default class App extends Component {
         <hr/>
 
         <FrontBar onUpdate={ frontData => this.setState({ frontData }) } />
+        <BackBar onUpdate={ backData => this.setState({ backData }) } />
       </div>
     );
   }
