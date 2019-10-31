@@ -11,7 +11,7 @@ const Back = (props) => (
       src={props.data.src}
       style={{
         marginTop: props.data.topDistance * 3,
-        marginLeft: -(props.data.width * 3) / 2, // center on screen
+        marginLeft: `${props.data.leftDistance}px`,
         width: props.data.width * 3
       }}
     /> }

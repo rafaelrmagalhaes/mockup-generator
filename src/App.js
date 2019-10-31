@@ -4,6 +4,7 @@ import Front from './front';
 import FrontBar from './front/bar';
 import BackBar from './back/bar';
 import Back from './back';
+import marca_dagua from './marca_dagua.png';
 
 export default class App extends Component {
   constructor() {
@@ -25,6 +26,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="main">
+        <img src={marca_dagua} className="watermark" alt="Estampa Personalizada" />
         <div className="mockup" style={{backgroundColor: this.state.color}}>
           <Front 
             data={this.state.frontData}

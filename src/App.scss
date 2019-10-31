@@ -1,6 +1,15 @@
 .main {
   padding: 10px;
-  
+
+  .watermark {
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    opacity: .2;
+    z-index: 3;
+  }
+
   .mockup {
     white-space: nowrap;
     margin: auto;
@@ -11,10 +20,20 @@
   .color {
     margin: 20px auto;
     text-align: center;
+    clear: both;
 
     label {
       margin-right: 10px;
       font-size: 14px;
     }
+  }
+
+  .right {
+    float: right;
+    text-align: right;
+  }
+
+  .left {
+    float: left;
   }
 }
