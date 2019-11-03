@@ -3,11 +3,11 @@ import './style.scss';
 
 // 3px = 1cm
 
-const Back = (props) => (
-  <div className="back">
+const Preview = (props) => (
+  <div className="preview" style={{ backgroundImage: `url(${props.bgImg})` }}>
     {props.data && props.data.src && <img 
-      id="img_back" 
-      alt="Camisa Costas"
+      id="img_preview" 
+      alt="Camisa Frente"
       src={props.data.src}
       style={{
         marginTop: props.data.topDistance * 3,
@@ -18,4 +18,4 @@ const Back = (props) => (
   </div>
 );
 
-export default Back;
+export default Preview;

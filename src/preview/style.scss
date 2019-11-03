@@ -1,12 +1,12 @@
-.front {
+.preview {
   position: relative;
   width: 555px;
   height: 445px;
-  background: url('../camisa_frente.png') center top no-repeat;
+  background: center top no-repeat;
   float: left;
   padding-top: 78px;
 
-  #img_front {
+  #img_preview {
     position: absolute;
     left: 140px;
   }

@@ -3,9 +3,9 @@
 
   .watermark {
     position: absolute;
-    width: 1200px;
+    width: 1400px;
     left: 50%;
-    margin-left: -600px;
+    margin-left: -700px;
     opacity: .2;
     z-index: 3;
   }
@@ -31,9 +31,17 @@
   .right {
     float: right;
     text-align: right;
+    padding-bottom: 10px;
   }
 
   .left {
     float: left;
+    padding-bottom: 10px;
+  }
+
+  .preview_bar {
+    width: 70px;
+    display: block;
+    margin: 10px auto;
   }
 }

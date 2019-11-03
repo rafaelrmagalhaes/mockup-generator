@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Front from './front';
-import FrontBar from './front/bar';
-import BackBar from './back/bar';
-import Back from './back';
+import Preview from './preview';
+import Bar from './bar';
 import marca_dagua from './marca_dagua.png';
+import camisa_frente from './camisa_frente.png';
+import camisa_costas from './camisa_costas.png';
 
 export default class App extends Component {
   constructor() {
@@ -12,8 +12,8 @@ export default class App extends Component {
   
     this.state = {
       color: '#fff',
-      frontData: null,
-      backData: null,
+      frontData: [],
+      backData: [],
     };
   }
 
@@ -28,11 +28,13 @@ export default class App extends Component {
       <div className="main">
         <img src={marca_dagua} className="watermark" alt="Estampa Personalizada" />
         <div className="mockup" style={{backgroundColor: this.state.color}}>
-          <Front 
+          <Preview 
             data={this.state.frontData}
+            bgImg={camisa_frente}
           />
-          <Back 
+          <Preview 
             data={this.state.backData}
+            bgImg={camisa_costas}
           />
         </div>
 
@@ -48,8 +50,8 @@ export default class App extends Component {
 
         <hr/>
 
-        <FrontBar onUpdate={ frontData => this.setState({ frontData }) } />
-        <BackBar onUpdate={ backData => this.setState({ backData }) } />
+        <Bar position="left" index={1} onUpdate={ frontData => this.setState({ frontData }) } />
+        <Bar position="right" index={1} onUpdate={ backData => this.setState({ backData }) } />
       </div>
     );
   }
