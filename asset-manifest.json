@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/mockup-generator/static/css/main.4fceaf6f.chunk.css",
-    "main.js": "/mockup-generator/static/js/main.e12e022d.chunk.js",
-    "main.js.map": "/mockup-generator/static/js/main.e12e022d.chunk.js.map",
+    "main.css": "/mockup-generator/static/css/main.26b81a2c.chunk.css",
+    "main.js": "/mockup-generator/static/js/main.92288b33.chunk.js",
+    "main.js.map": "/mockup-generator/static/js/main.92288b33.chunk.js.map",
     "runtime-main.js": "/mockup-generator/static/js/runtime-main.be0fe19c.js",
     "runtime-main.js.map": "/mockup-generator/static/js/runtime-main.be0fe19c.js.map",
-    "static/js/2.96d53459.chunk.js": "/mockup-generator/static/js/2.96d53459.chunk.js",
-    "static/js/2.96d53459.chunk.js.map": "/mockup-generator/static/js/2.96d53459.chunk.js.map",
+    "static/js/2.bfd8f8f2.chunk.js": "/mockup-generator/static/js/2.bfd8f8f2.chunk.js",
+    "static/js/2.bfd8f8f2.chunk.js.map": "/mockup-generator/static/js/2.bfd8f8f2.chunk.js.map",
     "index.html": "/mockup-generator/index.html",
-    "precache-manifest.a29e56cfe4599341cff1ae3d64bcc4dc.js": "/mockup-generator/precache-manifest.a29e56cfe4599341cff1ae3d64bcc4dc.js",
+    "precache-manifest.ee738b30456fa5d495949e9a80c68d4a.js": "/mockup-generator/precache-manifest.ee738b30456fa5d495949e9a80c68d4a.js",
     "service-worker.js": "/mockup-generator/service-worker.js",
-    "static/css/main.4fceaf6f.chunk.css.map": "/mockup-generator/static/css/main.4fceaf6f.chunk.css.map",
-    "static/media/style.scss": "/mockup-generator/static/media/camisa_frente.527c098b.png",
+    "static/css/main.26b81a2c.chunk.css.map": "/mockup-generator/static/css/main.26b81a2c.chunk.css.map",
+    "static/media/camisa_costas.png": "/mockup-generator/static/media/camisa_costas.ad59608e.png",
+    "static/media/camisa_frente.png": "/mockup-generator/static/media/camisa_frente.527c098b.png",
     "static/media/marca_dagua.png": "/mockup-generator/static/media/marca_dagua.aa35bae6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.be0fe19c.js",
-    "static/js/2.96d53459.chunk.js",
-    "static/css/main.4fceaf6f.chunk.css",
-    "static/js/main.e12e022d.chunk.js"
+    "static/js/2.bfd8f8f2.chunk.js",
+    "static/css/main.26b81a2c.chunk.css",
+    "static/js/main.92288b33.chunk.js"
   ]
 }
