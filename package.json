@@ -5,6 +5,7 @@
   "homepage": "https://rafaelrmagalhaes.github.io/mockup-generator",
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "html2canvas": "^1.0.0-rc.5",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

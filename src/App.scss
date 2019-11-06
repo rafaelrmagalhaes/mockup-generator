@@ -1,12 +1,36 @@
 .main {
   padding: 10px;
 
+  .print {
+    display: block;
+    text-align: right;
+    clear: both;
+    width: 100%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .client {
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  #canvas {
+    float: left;
+    width: 100%;
+  }
+
   .watermark {
     position: absolute;
     width: 1400px;
     left: 50%;
     margin-left: -700px;
-    opacity: .2;
+    opacity: 0.2;
     z-index: 3;
   }
 
