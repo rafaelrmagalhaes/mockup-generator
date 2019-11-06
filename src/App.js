@@ -12,8 +12,10 @@ export default class App extends Component {
   
     this.state = {
       color: '#fff',
-      frontData: [],
-      backData: [],
+      frontData: null,
+      frontData2: null,
+      backData: null,
+      backData2: null,
     };
   }
 
@@ -28,14 +30,14 @@ export default class App extends Component {
       <div className="main">
         <img src={marca_dagua} className="watermark" alt="Estampa Personalizada" />
         <div className="mockup" style={{backgroundColor: this.state.color}}>
-          <Preview 
-            data={this.state.frontData}
-            bgImg={camisa_frente}
-          />
-          <Preview 
-            data={this.state.backData}
-            bgImg={camisa_costas}
-          />
+          <div className="preview" style={{ backgroundImage: `url(${camisa_frente})` }}>
+            <Preview data={this.state.frontData} />
+            <Preview data={this.state.frontData2} />
+          </div>
+          <div className="preview" style={{ backgroundImage: `url(${camisa_costas})` }}>
+            <Preview data={this.state.backData} />
+            <Preview data={this.state.backData2} />
+          </div>
         </div>
 
         <div className="color">
@@ -45,12 +47,15 @@ export default class App extends Component {
             <option value="#f00">Vermelha</option>
             <option value="#00f">Azul</option>
             <option value="#0f0">Verde</option>
+            <option value="#000">Preta</option>
           </select>
         </div>
 
         <hr/>
 
         <Bar position="left" index={1} onUpdate={ frontData => this.setState({ frontData }) } />
+        <Bar position="left" index={2} onUpdate={ frontData2 => this.setState({ frontData2 }) } />
+        <Bar position="right" index={2} onUpdate={ backData2 => this.setState({ backData2 }) } />
         <Bar position="right" index={1} onUpdate={ backData => this.setState({ backData }) } />
       </div>
     );
