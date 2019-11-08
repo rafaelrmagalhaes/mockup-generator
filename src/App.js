@@ -64,7 +64,10 @@ export default class App extends Component {
             </div>
             <div
               className="preview"
-              style={{ backgroundImage: `url(${camisa_costas})` }}
+              style={{
+                backgroundImage: `url(${camisa_costas})`,
+                paddingTop: 20
+              }}
             >
               <Preview data={this.state.backData} />
               <Preview data={this.state.backData2} />
