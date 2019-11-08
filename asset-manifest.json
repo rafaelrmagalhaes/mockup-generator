@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mockup-generator/static/css/main.3e953207.chunk.css",
-    "main.js": "/mockup-generator/static/js/main.df029336.chunk.js",
-    "main.js.map": "/mockup-generator/static/js/main.df029336.chunk.js.map",
+    "main.js": "/mockup-generator/static/js/main.9060e8c0.chunk.js",
+    "main.js.map": "/mockup-generator/static/js/main.9060e8c0.chunk.js.map",
     "runtime-main.js": "/mockup-generator/static/js/runtime-main.be0fe19c.js",
     "runtime-main.js.map": "/mockup-generator/static/js/runtime-main.be0fe19c.js.map",
     "static/js/2.03176acb.chunk.js": "/mockup-generator/static/js/2.03176acb.chunk.js",
     "static/js/2.03176acb.chunk.js.map": "/mockup-generator/static/js/2.03176acb.chunk.js.map",
     "index.html": "/mockup-generator/index.html",
-    "precache-manifest.2638fb297f1c4ed451c18fd1f31fc18b.js": "/mockup-generator/precache-manifest.2638fb297f1c4ed451c18fd1f31fc18b.js",
+    "precache-manifest.1b9c92a4143a4d9db13c51bcdc943d43.js": "/mockup-generator/precache-manifest.1b9c92a4143a4d9db13c51bcdc943d43.js",
     "service-worker.js": "/mockup-generator/service-worker.js",
     "static/css/main.3e953207.chunk.css.map": "/mockup-generator/static/css/main.3e953207.chunk.css.map",
     "static/media/camisa_costas.png": "/mockup-generator/static/media/camisa_costas.ad59608e.png",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.be0fe19c.js",
     "static/js/2.03176acb.chunk.js",
     "static/css/main.3e953207.chunk.css",
-    "static/js/main.df029336.chunk.js"
+    "static/js/main.9060e8c0.chunk.js"
   ]
 }

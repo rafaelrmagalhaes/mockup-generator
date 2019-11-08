@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa2b9a4b1e5e15b83f75ec65ae11be3a",
+    "revision": "8a4affa4f6ac0e69bc57f43741444967",
     "url": "/mockup-generator/index.html"
   },
   {
-    "revision": "e7f20a7036cf5c0a0415",
+    "revision": "d6ced489eeec54f7ee6f",
     "url": "/mockup-generator/static/css/main.3e953207.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mockup-generator/static/js/2.03176acb.chunk.js"
   },
   {
-    "revision": "e7f20a7036cf5c0a0415",
-    "url": "/mockup-generator/static/js/main.df029336.chunk.js"
+    "revision": "d6ced489eeec54f7ee6f",
+    "url": "/mockup-generator/static/js/main.9060e8c0.chunk.js"
   },
   {
     "revision": "67536244984f3f7316ff",
