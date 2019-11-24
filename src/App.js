@@ -65,8 +65,8 @@ export default class App extends Component {
           </li>
           <li>
             <div className="type">
-              <label htmlFor="color">Tipo da camisa:</label>
-              <select id="color" onChange={e => this.changeType(e)}>
+              <label htmlFor="type">Tipo da camisa:</label>
+              <select id="type" onChange={e => this.changeType(e)}>
                 <option value="comum">Comum</option>
                 <option value="polo">Polo</option>
                 <option value="baby_look">Baby Look</option>
