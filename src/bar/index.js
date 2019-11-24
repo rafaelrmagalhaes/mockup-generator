@@ -55,7 +55,7 @@ export default class Bar extends Component {
               type="range"
               id="top"
               min="6"
-              max="60"
+              max="200"
               value={this.state.topDistance}
               onChange={e => this.setState({ topDistance: e.target.value })}
             />
@@ -68,7 +68,7 @@ export default class Bar extends Component {
               type="range"
               id="left"
               min="0"
-              max="250"
+              max="400"
               value={this.state.leftDistance}
               onChange={e => this.setState({ leftDistance: e.target.value })}
             />
@@ -81,7 +81,7 @@ export default class Bar extends Component {
               type="range"
               id="width"
               min="10"
-              max="80"
+              max="150"
               value={this.state.width}
               onChange={e => this.setState({ width: e.target.value })}
             />

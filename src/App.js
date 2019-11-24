@@ -4,14 +4,13 @@ import "./App.scss";
 import Preview from "./preview";
 import Bar from "./bar";
 import marca_dagua from "./marca_dagua.png";
-import camisa_frente from "./camisa_frente.png";
-import camisa_costas from "./camisa_costas.png";
 
 export default class App extends Component {
   constructor() {
     super();
 
     this.state = {
+      type: 'comum',
       color: "#fff",
       frontData: null,
       frontData2: null,
@@ -19,6 +18,12 @@ export default class App extends Component {
       backData2: null,
       clientName: ""
     };
+  }
+
+  changeType(e) {
+    this.setState({
+      type: e.target.value
+    });
   }
 
   changeColor(e) {
@@ -48,50 +53,40 @@ export default class App extends Component {
         <a href="#" className="print" onClick={() => this.print()}>
           Imprimir
         </a>
-        <div id="canvas">
-          <img
-            src={marca_dagua}
-            className="watermark"
-            alt="Estampa Personalizada"
-          />
-          <div className="mockup" style={{ backgroundColor: this.state.color }}>
-            <div
-              className="preview"
-              style={{ backgroundImage: `url(${camisa_frente})` }}
-            >
-              <Preview data={this.state.frontData} />
-              <Preview data={this.state.frontData2} />
-            </div>
-            <div
-              className="preview"
-              style={{
-                backgroundImage: `url(${camisa_costas})`,
-                paddingTop: 20
-              }}
-            >
-              <Preview data={this.state.backData} />
-              <Preview data={this.state.backData2} />
-            </div>
-          </div>
-        </div>
 
-        <input
-          type="text"
-          placeholder="Nome do Cliente"
-          className="client"
-          onChange={e => this.updateClientName(e)}
-        />
-
-        <div className="color">
-          <label htmlFor="color">Cor da camisa:</label>
-          <select id="color" onChange={e => this.changeColor(e)}>
-            <option value="#fff">Branca</option>
-            <option value="#f00">Vermelha</option>
-            <option value="#00f">Azul</option>
-            <option value="#0f0">Verde</option>
-            <option value="#000">Preta</option>
-          </select>
-        </div>
+        <ul className="info">
+          <li>
+            <input
+              type="text"
+              placeholder="Nome do Cliente"
+              className="client"
+              onChange={e => this.updateClientName(e)}
+            />
+          </li>
+          <li>
+            <div className="type">
+              <label htmlFor="color">Tipo da camisa:</label>
+              <select id="color" onChange={e => this.changeType(e)}>
+                <option value="comum">Comum</option>
+                <option value="polo">Polo</option>
+                <option value="baby_look">Baby Look</option>
+                <option value="baby_look_raglan">Baby Look Raglan</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div className="color">
+              <label htmlFor="color">Cor da camisa:</label>
+              <select id="color" onChange={e => this.changeColor(e)}>
+                <option value="#fff">Branca</option>
+                <option value="#f00">Vermelha</option>
+                <option value="#00f">Azul</option>
+                <option value="#0f0">Verde</option>
+                <option value="#000">Preta</option>
+              </select>
+            </div>
+          </li>
+        </ul>
 
         <hr />
 
@@ -115,6 +110,33 @@ export default class App extends Component {
           index={1}
           onUpdate={backData => this.setState({ backData })}
         />
+
+        <div id="canvas">
+          <img
+            src={marca_dagua}
+            className="watermark"
+            alt="Estampa Personalizada"
+          />
+          <div className="mockup" style={{ backgroundColor: this.state.color }}>
+            <div
+              className="preview"
+              style={{ backgroundImage: `url('./mockups/${this.state.type}_frente.png')` }}
+            >
+              <Preview data={this.state.frontData} />
+              <Preview data={this.state.frontData2} />
+            </div>
+            <div
+              className="preview"
+              style={{
+                backgroundImage: `url('./mockups/${this.state.type}_costas.png')`,
+                paddingTop: 20
+              }}
+            >
+              <Preview data={this.state.backData} />
+              <Preview data={this.state.backData2} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

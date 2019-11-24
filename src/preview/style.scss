@@ -1,13 +1,15 @@
 .preview {
   position: relative;
-  width: 555px;
-  height: 445px;
+  width: 395px;
+  height: 500px;
   background: center top no-repeat;
   float: left;
   padding-top: 78px;
+  box-sizing: border-box;
 
   #img_preview {
     position: absolute;
-    left: 140px;
+    top: 0;
+    left: 0;
   }
 }

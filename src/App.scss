@@ -1,6 +1,35 @@
 .main {
   padding: 10px;
 
+  .info {
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      .client {
+        margin: auto;
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        height: 10px;
+      }
+
+      .color, .type {
+        margin: 20px auto;
+        text-align: center;
+        clear: both;
+    
+        label {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
   .print {
     display: block;
     text-align: right;
@@ -13,13 +42,6 @@
     text-decoration: none;
   }
 
-  .client {
-    margin: auto;
-    display: block;
-    font-size: 18px;
-    padding: 5px;
-  }
-
   #canvas {
     float: left;
     width: 100%;
@@ -30,26 +52,15 @@
     width: 1400px;
     left: 50%;
     margin-left: -700px;
-    opacity: 0.2;
-    z-index: 3;
+    opacity: 0.3;
+    z-index: 999;
   }
 
   .mockup {
     white-space: nowrap;
     margin: auto;
-    width: 1110px;
-    height: 445px;
-  }
-
-  .color {
-    margin: 20px auto;
-    text-align: center;
-    clear: both;
-
-    label {
-      margin-right: 10px;
-      font-size: 14px;
-    }
+    width: 790px;
+    height: 500px;
   }
 
   .right {
