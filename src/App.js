@@ -79,10 +79,15 @@ export default class App extends Component {
               <label htmlFor="color">Cor da camisa:</label>
               <select id="color" onChange={e => this.changeColor(e)}>
                 <option value="#fff">Branca</option>
-                <option value="#f00">Vermelha</option>
-                <option value="#00f">Azul</option>
-                <option value="#0f0">Verde</option>
                 <option value="#000">Preta</option>
+                <option value="#00f">Azul</option>
+                <option value="#0c0636">Azul Marinho</option>
+                <option value="#74797a">Cinza</option>
+                <option value="#353738">Cinza Chumbo</option>
+                <option value="#c7c7c7">Cinza Prata</option>
+                <option value="#0f0">Verde</option>
+                <option value="#2f3b04">Verde Escuro</option>
+                <option value="#f00">Vermelha</option>
               </select>
             </div>
           </li>
