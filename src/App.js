@@ -80,11 +80,22 @@ export default class App extends Component {
               <select id="color" onChange={e => this.changeColor(e)}>
                 <option value="#fff">Branca</option>
                 <option value="#000">Preta</option>
+                <option value="#5b253d">Açaí</option>
+                <option value="#ffeb88">Amarela Bebê</option>
+                <option value="#ffdd02">Amarela Canário</option>
+                <option value="#ffc000">Amarela Ouro</option>
                 <option value="#00f">Azul</option>
-                <option value="#0c0636">Azul Marinho</option>
+                <option value="#bfdef2">Azul Bebê</option>
+                <option value="#083c78">Azul Marinho</option>
+                <option value="#000032">Azul Royal</option>
+                <option value="#1d858c">Azul Turquesa</option>
                 <option value="#74797a">Cinza</option>
                 <option value="#353738">Cinza Chumbo</option>
                 <option value="#c7c7c7">Cinza Prata</option>
+                <option value="#e9d2fe">Lilás Claro</option>
+                <option value="#a69bd7">Lilás Escuro</option>
+                <option value="#521d6b">Roxo</option>
+                <option value="#7e4568">Uva</option>
                 <option value="#0f0">Verde</option>
                 <option value="#2f3b04">Verde Escuro</option>
                 <option value="#f00">Vermelha</option>
